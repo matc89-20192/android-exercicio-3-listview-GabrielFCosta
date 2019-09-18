@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 
 import java.io.Serializable;
 
-class Tarefa implements Comparable<Tarefa>,Parcelable,Serializable {
+class Tarefa implements Comparable<Tarefa>/*,Parcelable,Serializable*/ {
     private String descricao;
     private int prioridade;
 
@@ -43,6 +43,7 @@ class Tarefa implements Comparable<Tarefa>,Parcelable,Serializable {
     }
 
 
+    /*
     //Implementação de parcelable para onSaveInstance/onRestoreInstance sem resultado.
     public int describeContents() {
         return 0;
@@ -65,6 +66,6 @@ class Tarefa implements Comparable<Tarefa>,Parcelable,Serializable {
         descricao = in.readString();
         prioridade = in.readInt();
     }
-
+    */
 
 }
